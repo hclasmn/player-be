@@ -6,12 +6,12 @@ module.exports = {
         socket: 8081
     },
     sequelize: {
-        host: process.env.APP_MYSQL_HOST || "127.0.0.1",
-        port: process.env.APP_MYSQL_PORT || 3306,
-        database: process.env.APP_MYSQL_DATABASE || "database",
-        username: process.env.APP_MYSQL_USER || "username",
-        password: process.env.APP_MYSQL_PASSWORD || "password",
-        dialect: "mysql",
+        host: process.env.APP_MYSQL_HOST || "192.168.1.140",
+        port: process.env.APP_MYSQL_PORT || 3308,
+        database: process.env.APP_MYSQL_DATABASE || "music",
+        username: process.env.APP_MYSQL_USER || "root",
+        password: process.env.APP_MYSQL_PASSWORD || "root",
+        dialect: "mariadb",
         pool: {
             max: 5,
             min: 0,
